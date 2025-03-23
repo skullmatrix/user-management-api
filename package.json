@@ -1,0 +1,40 @@
+{
+  "name": "user-management-api",
+  "version": "1.0.0",
+  "description": "REST API for managing users",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.14.0",
+    "nodeman": "^1.1.2",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.21"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^18.19.81",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skullmatrix/user-management-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skullmatrix/user-management-api/issues"
+  },
+  "homepage": "https://github.com/skullmatrix/user-management-api#readme"
+}
