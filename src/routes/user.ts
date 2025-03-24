@@ -1,6 +1,7 @@
 import express from "express";
-import { updateUser, deleteUser } from "../controllers/user.controller";
 import Joi from "joi";
+import { getAllUsers, getUserById } from "../controllers/user.controller";
+import { updateUser, deleteUser } from "../controllers/user.controller";
 import { validateRequest } from "../_middleware/validate-request";
 
 const router = express.Router();
@@ -21,5 +22,7 @@ function updateSchema(req: express.Request, res: express.Response, next: express
     });
     validateRequest(req, res, next, schema);
 }
+
+
 
 export default router;
