@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import userService from "./user.service";
+import userService from "../services/user.service";
 
 // Create a new user
 export async function createUser(req: Request, res: Response, next: NextFunction) {

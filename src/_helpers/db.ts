@@ -2,7 +2,7 @@ import "reflect-metadata";
 import { createConnection, Connection } from "typeorm";
 import mysql from "mysql2/promise";
 import config from "../config";
-import { User } from "../users/user.model";
+import { User } from "../entities/User";
 
 export const db = {
     connection: null as Connection | null,

@@ -1,4 +1,4 @@
-import { User } from "./user.model";
+import { User } from "../entities/User";
 import { db } from "../_helpers/db";
 
 // Define the user service methods
