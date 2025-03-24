@@ -1,22 +1,12 @@
 import express from "express";
-import { createUser } from "../controllers/user.controller";
-import Joi from "joi";
-import { validateRequest } from "../_middleware/validate-request";
+import { getAllUsers, getUserById } from "../controllers/user.controller";
 
 const router = express.Router();
 
-// Create a new user
-router.post("/", createSchema, createUser);
+// Get all users
+router.get("/", getAllUsers);
 
-// Validation schema for user creation
-function createSchema(req: express.Request, res: express.Response, next: express.NextFunction) {
-    const schema = Joi.object({
-        firstName: Joi.string().required(),
-        lastName: Joi.string().required(),
-        email: Joi.string().email().required(),
-        section: Joi.string().required(),
-    });
-    validateRequest(req, res, next, schema);
-}
+// Get a user by ID
+router.get("/:id", getUserById);
 
 export default router;
