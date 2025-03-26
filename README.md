@@ -1,17 +1,11 @@
-# This is a user-management-api group project by:
+# User Management API Group Project
 
-<small>
-Leader : John Manuel Planas
-</small>
-<small>
-Members: 
-</small>
-<small>
-  Mark Andrian Go
-</small>
-<small>
-  Jay Hagupar
-</small>
-<small>
-  Adrianne Tejares
-</small>
+### By:
+
+**Leader:**  
+<small>John Manuel Planas</small>  
+
+**Members:**  
+<small>Mark Andrian Go</small>  
+<small>Jay Hagupar</small>  
+<small>Adrianne Tejares</small>
