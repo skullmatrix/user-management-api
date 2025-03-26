@@ -15,7 +15,7 @@ export async function initialize() {
 
         // Step 1: Create the database if it doesn't exist
         const connection = await mysql.createConnection({ host, port, user, password });
-        await connection.query(`CREATE DATABASE IF NOT EXISTS ${database};`);
+        await connection.query(`CREATE DATABASE IF NOT EXISTS \`${database}\`;`);
         await connection.end();
 
         // Step 2: Connect to the database using TypeORM
