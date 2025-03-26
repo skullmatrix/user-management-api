@@ -4,12 +4,15 @@
   "description": "REST API for managing users",
   "main": "dist/app.js",
   "scripts": {
-    "start": "node dist/app.js",
-    "dev": "nodemon src/app.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "joi": "^17.13.3",
     "mysql": "^2.18.1",
@@ -20,10 +23,13 @@
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
+    "@types/bcryptjs": "^2.4.6",
     "@types/express": "^4.17.21",
-    "@types/node": "^18.19.81",
+    "@types/joi": "^17.2.2",
+    "@types/node": "^18.19.83",
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.2"
   },
   "repository": {
